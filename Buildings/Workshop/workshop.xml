@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="workshop" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_workshop</name>
+        <image>Buildings/Workshop/store_Workshop.dds</image>
+        <price>23000</price>
+        <functions>
+            <function>$l10n_function_workshop</function>
+        </functions>
+        <dailyUpkeep>50</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>tools</tab>
+        </brush>
+        <vertexBufferMemoryUsage>1031424</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>174592</indexBufferMemoryUsage>
+        <textureMemoryUsage>8126464</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>Buildings/Workshop/Workshop.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp"/>
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="3" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas />
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <triggerMarkers>
+        <triggerMarker node="markerWrench" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" />
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="SHOP" linkNode="vehicleTrigger" />
+    </hotspots>
+
+    <workshop>
+        <sellingPoint playerTriggerNode="playerTrigger" iconNode="markerWrench" sellTriggerNode="vehicleTrigger" ownWorkshop="true" mobileWorkshop="false" />
+    </workshop>
+	
+	<animatedObjects>	
+		<animatedObject index="Containerdoors">
+		  <controls triggerNode="0>6|1" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+		  <animation initialTime="0" duration="1">
+			<part node="0>6|0|3">
+			  <keyFrame time="0.05" rotation="0 0 0" />
+			  <keyFrame time="1.00" rotation="0 -95 0" />
+			</part>			
+		  </animation>
+		  <sounds>
+			<moving linkNode="0>6|0|3" template="metalDoorsLoop" />
+			<posEnd linkNode="0>6|0|3" template="metalDoorsOpen" />
+			<negEnd linkNode="0>6|0|3" template="metalDoorsClose" />
+		  </sounds>
+		</animatedObject>	
+	</animatedObjects>	
+
+    <i3dMappings>
+        <i3dMapping id="markerWrench" node="0>0|0" />
+        <i3dMapping id="vehicleTrigger" node="0>0|2" />
+        <i3dMapping id="playerTrigger" node="0>0|3" />
+        <i3dMapping id="clearArea1Start" node="0>1|0" />
+        <i3dMapping id="clearArea1Width" node="0>1|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>1|0|1" />
+        <i3dMapping id="levelArea1Start" node="0>2|0" />
+        <i3dMapping id="levelArea1Width" node="0>2|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>2|0|1" />
+        <i3dMapping id="testArea1Start" node="0>4|0" />
+        <i3dMapping id="testArea1End" node="0>4|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>4|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>4|0|0" />
+    </i3dMappings>
+</placeable>

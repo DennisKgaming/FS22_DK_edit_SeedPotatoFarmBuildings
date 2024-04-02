@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../shared/xml/schema/fillTypes.xsd"> 
+
+	<materialholders>
+        <materialholder filename = "$data/fillPlanes/fillPlane_materialHolder.i3d" />
+    </materialholders>
+	
+	<fillTypes>
+		<fillType name="POTATO" title="$l10n_fillType_potato">
+			<pallet 	filename="Pallets/Empty/PotatoBox.xml" />	
+        </fillType>
+
+        <fillType name="STONE" title="$l10n_fillType_stone">
+            <pallet filename="Pallets/Stone/Stone.xml" />					
+        </fillType>
+
+        <fillType name="MANURE" title="$l10n_fillType_manure">
+	        <pallet 	filename="Pallets/Manure/Manure.xml" />
+
+        </fillType>	
+		
+		<fillType name="PIGFOOD" title="$l10n_fillType_pigFood">
+            <pallet filename="Pallets/Wastepotatobagged/WastepotatoBagged.xml" />
+        </fillType>		
+	
+        <fillType name="WASTEPOTATO" title="$l10n_fillType_potato_pigfood" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
+            <physics massPerLiter="0.75" maxPhysicalSurfaceAngle="34" />
+            <economy pricePerLiter="0.051">
+                <factors>
+                    <factor period="1"  value="1.12" />
+                    <factor period="2"  value="1.04" />
+                    <factor period="3"  value="0.93" />
+                    <factor period="4"  value="0.85" />
+                    <factor period="5"  value="0.79" />
+                    <factor period="6"  value="0.79" />
+                    <factor period="7"  value="0.86" />
+                    <factor period="8"  value="0.96" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.16" />
+                    <factor period="11" value="1.22" />
+                    <factor period="12" value="1.21" />
+                </factors>
+            </economy>
+            <effects prioritizedEffectType="ParticleEffect"/>
+            <image      hud     ="XML/hud_fill_wastepotato.dds" />
+            <pallet     filename="Pallets/Wastesize/Wastesize.xml" />
+            <textures   diffuse ="$data/fillPlanes/potatoes_diffuse.png"
+                        normal  ="$data/fillPlanes/potatoes_normal.png"
+                        specular="$data/fillPlanes/potatoes_specular.png"
+                        distance="$data/fillPlanes/distance/potatoesDistance_diffuse.png" />
+        </fillType>		
+		
+        <fillType name="SEEDPOTATO" title="$l10n_fillType_sorted_potato" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
+            <physics massPerLiter="0.75" maxPhysicalSurfaceAngle="34" />
+            <economy pricePerLiter="0.172">
+                <factors>
+                    <factor period="1"  value="1.12" />
+                    <factor period="2"  value="1.04" />
+                    <factor period="3"  value="0.93" />
+                    <factor period="4"  value="0.85" />
+                    <factor period="5"  value="0.79" />
+                    <factor period="6"  value="0.79" />
+                    <factor period="7"  value="0.86" />
+                    <factor period="8"  value="0.96" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.16" />
+                    <factor period="11" value="1.22" />
+                    <factor period="12" value="1.21" />
+                </factors>
+            </economy>
+            <effects prioritizedEffectType="ParticleEffect"/>
+            <image      hud     ="XML/hud_fill_seedpotato.dds" />
+            <pallet     filename="Pallets/Mediumsize/Mediumsize.xml" />
+           <textures    diffuse ="$data/fillPlanes/potatoes_diffuse.png"
+                        normal  ="$data/fillPlanes/potatoes_normal.png"
+                        specular="$data/fillPlanes/potatoes_specular.png"
+                        distance="$data/fillPlanes/distance/potatoesDistance_diffuse.png" />
+        </fillType>		
+
+        <fillType name="PREMIUMPOTATO" title="$l10n_fillType_premium_potato" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
+            <physics massPerLiter="0.75" maxPhysicalSurfaceAngle="34" />
+            <economy pricePerLiter="0.241">
+                <factors>
+                    <factor period="1"  value="1.12" />
+                    <factor period="2"  value="1.04" />
+                    <factor period="3"  value="0.93" />
+                    <factor period="4"  value="0.85" />
+                    <factor period="5"  value="0.79" />
+                    <factor period="6"  value="0.79" />
+                    <factor period="7"  value="0.86" />
+                    <factor period="8"  value="0.96" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.16" />
+                    <factor period="11" value="1.22" />
+                    <factor period="12" value="1.21" />
+                </factors>
+            </economy>
+            <effects prioritizedEffectType="ParticleEffect"/>
+            <image      hud     ="XML/hud_fill_premiumpotato.dds" />
+            <pallet     filename="Pallets/Premiumsize/Premiumsize.xml" />
+            <textures   diffuse ="$data/fillPlanes/potatoes_diffuse.png"
+                        normal  ="$data/fillPlanes/potatoes_normal.png"
+                        specular="$data/fillPlanes/potatoes_specular.png"
+                        distance="$data/fillPlanes/distance/potatoesDistance_diffuse.png" />
+        </fillType>		
+		
+		<fillType name="PREMIUMBAGGED" title="$l10n_fillType_premium_bagged_potato" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
+            <physics massPerLiter="0.75" maxPhysicalSurfaceAngle="34" />
+            <economy pricePerLiter="0.281">
+                <factors>
+                    <factor period="1"  value="1.12" />
+                    <factor period="2"  value="1.04" />
+                    <factor period="3"  value="0.93" />
+                    <factor period="4"  value="0.85" />
+                    <factor period="5"  value="0.79" />
+                    <factor period="6"  value="0.79" />
+                    <factor period="7"  value="0.86" />
+                    <factor period="8"  value="0.96" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.16" />
+                    <factor period="11" value="1.22" />
+                    <factor period="12" value="1.21" />
+                </factors>
+            </economy>
+            <effects prioritizedEffectType="ParticleEffect"/>
+            <image      hud     ="XML/hud_fill_premiumpotato.dds" />
+            <pallet     filename="Pallets/Premiumbagged/PremiumBagged.xml" />
+            <textures   diffuse ="$data/fillPlanes/potatoes_diffuse.png"
+                        normal  ="$data/fillPlanes/potatoes_normal.png"
+                        specular="$data/fillPlanes/potatoes_specular.png"
+                        distance="$data/fillPlanes/distance/potatoesDistance_diffuse.png" />
+        </fillType>		
+
+			 <fillType name="BAGGEDSEEDPOTATO" title="$l10n_fillType_bagged_sorted_potato" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
+            <physics massPerLiter="0.75" maxPhysicalSurfaceAngle="34" />
+            <economy pricePerLiter="0.192">
+                <factors>
+                    <factor period="1"  value="1.12" />
+                    <factor period="2"  value="1.04" />
+                    <factor period="3"  value="0.93" />
+                    <factor period="4"  value="0.85" />
+                    <factor period="5"  value="0.79" />
+                    <factor period="6"  value="0.79" />
+                    <factor period="7"  value="0.86" />
+                    <factor period="8"  value="0.96" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.16" />
+                    <factor period="11" value="1.22" />
+                    <factor period="12" value="1.21" />
+                </factors>
+            </economy>
+            <effects prioritizedEffectType="ParticleEffect"/>
+            <image      hud     ="XML/hud_fill_seedpotato.dds" />
+            <pallet     filename="Pallets/Seedpotatobagged/Seedpotatobagged.xml" />
+           <textures    diffuse ="$data/fillPlanes/potatoes_diffuse.png"
+                        normal  ="$data/fillPlanes/potatoes_normal.png"
+                        specular="$data/fillPlanes/potatoes_specular.png"
+                        distance="$data/fillPlanes/distance/potatoesDistance_diffuse.png" />
+        </fillType>		
+        <fillType name="BIGBAGS" title="$l10n_fillType_bigbags" showOnPriceTable="false">
+            <physics massPerLiter="0.17" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="1.6"></economy>
+            <image      hud     ="XML/hud_fill_Bigbags.dds" />
+            <pallet     filename="Pallets/BigBags/BigBagStackPallet.xml" />
+        </fillType>	
+
+        <fillType name="EMPTYPALLET" title="$l10n_fillType_emptypallets" showOnPriceTable="false">
+            <physics massPerLiter="0.17" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="1.6"></economy>
+            <image      hud     ="XML/hud_fill_Pallets.dds" />
+            <pallet     filename="Pallets/Pallets/Pallets.xml" />
+        </fillType>			
+		</fillTypes>
+    <fillTypeCategories>
+		<fillTypeCategory name="BULK">WASTEPOTATO SEEDPOTATO PREMIUMPOTATO PREMIUMBAGGED BAGGEDSEEDPOTATO</fillTypeCategory>
+		<fillTypeCategory name="TRAINWAGON">WASTEPOTATO SEEDPOTATO PREMIUMPOTATO PREMIUMBAGGED BAGGEDSEEDPOTATO</fillTypeCategory>
+		<fillTypeCategory name="FARMSILO">WASTEPOTATO SEEDPOTATO PREMIUMPOTATO PREMIUMBAGGED BAGGEDSEEDPOTATO BIGBAGS EMPTYPALLET</fillTypeCategory>
+		<fillTypeCategory name="PRODUCT">WASTEPOTATO SEEDPOTATO PREMIUMPOTATO PREMIUMBAGGED BAGGEDSEEDPOTATO BIGBAGS EMPTYPALLET</fillTypeCategory>   		
+    </fillTypeCategories>
+	
+	   <fillTypeSounds>
+        <fillTypeSound isDefault="true">
+            <sound template="DEFAULT_SILO_FILL"/>
+        </fillTypeSound>
+    </fillTypeSounds>
+
+</map>

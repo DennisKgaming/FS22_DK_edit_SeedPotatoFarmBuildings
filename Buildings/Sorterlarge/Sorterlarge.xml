@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='utf-8'?>
+<placeable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="productionPoint" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+  <storeData>
+        <name>$l10n_storeItem_sorterlarge</name>
+    <functions>
+      <function>$l10n_function_productionPoint</function>
+    </functions>
+    <image>Buildings/Sorterlarge/store_Sorterlarge.dds</image>
+    <price>275000</price>
+    <dailyUpkeep>25</dailyUpkeep>
+    <lifetime>1000</lifetime>
+    <rotation>0</rotation>
+    <brand>NONE</brand>
+    <species>placeable</species>
+    <category>productionPoints</category>
+    <brush>
+      <type>placeable</type>
+      <category>production</category>
+      <tab>factories</tab>
+    </brush>
+        <vertexBufferMemoryUsage>3667456</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1391872</indexBufferMemoryUsage>
+        <textureMemoryUsage>9699328</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+  </storeData>
+  <base>
+    <filename>Buildings/Sorterlarge/Sorterlarge.i3d</filename>
+  </base>
+   <placement useRandomYRotation="false" useManualYRotation="true">
+    <testAreas>
+      <testArea startNode="TestStart" endNode="TestEnd" />
+    </testAreas>
+  </placement>
+    <clearAreas></clearAreas>
+
+    <leveling></leveling>
+
+    <indoorAreas></indoorAreas>
+
+  <ai>
+    <updateAreas>
+      <updateArea startNode="AiUpdateAreaStart" endNode="AiUpdateAreaEnd" />
+    </updateAreas>
+  </ai>
+  <!--dynamicallyLoadedParts>
+    <dynamicallyLoadedPart node="0" linkNode="Buttonnode" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+  </dynamicallyLoadedParts-->
+  
+  <productionPoint>
+    <productions>
+      <!--production id="PotatoBoxing" name="Potatoboxing" cyclesPerHour="120" costsPerActiveHour="3">
+        <inputs>
+          <input fillType="POTATO" amount="500" />
+        </inputs>
+        <outputs>
+          <output fillType="POTATO" amount="500" />
+        </outputs>
+      </production-->
+      <production id="Potatosorting" name="$l10n_fillType_Potatosorting" cyclesPerHour="120" costsPerActiveHour="3">
+        <inputs>
+          <input fillType="POTATO" amount="1000" />
+        </inputs>
+        <outputs>
+          <output fillType="WASTEPOTATO" amount="100" />
+          <output fillType="SEEDPOTATO" amount="400" />
+          <output fillType="PREMIUMPOTATO" amount="500" />
+        </outputs>
+      </production>
+      <production id="Potatosortingbagged" name="$l10n_fillType_Potatosortingbagged" cyclesPerHour="120" costsPerActiveHour="3">
+        <inputs>
+          <input fillType="POTATO" amount="1000" />
+        </inputs>
+        <outputs>
+          <output fillType="PIGFOOD" amount="100" />
+          <output fillType="BAGGEDSEEDPOTATO" amount="400" />
+          <output fillType="PREMIUMBAGGED" amount="500" />
+        </outputs>
+      </production>
+      <production id="Premiumbagger" name="$l10n_fillType_Premiumbagger" cyclesPerHour="120" costsPerActiveHour="3">
+        <inputs>
+          <input fillType="PREMIUMPOTATO" amount="1000" />
+        </inputs>
+        <outputs>
+          <output fillType="PREMIUMBAGGED" amount="1000" />
+        </outputs>
+      </production>
+      <production id="Seedbagger" name="$l10n_fillType_Seedbagger" cyclesPerHour="120" costsPerActiveHour="3">
+        <inputs>
+          <input fillType="SEEDPOTATO" amount="1000" />
+        </inputs>
+        <outputs>
+          <output fillType="BAGGEDSEEDPOTATO" amount="1000" />
+        </outputs>
+      </production>
+      <production id="Wastebagger" name="$l10n_fillType_Wastebagger" cyclesPerHour="120" costsPerActiveHour="3">
+        <inputs>
+          <input fillType="WASTEPOTATO" amount="1000" />
+        </inputs>
+        <outputs>
+          <output fillType="PIGFOOD" amount="1000" />
+        </outputs>
+      </production>
+    </productions>
+    <playerTrigger node="playerTrigger" />
+    <storage isExtension="false" fillLevelSyncThreshold="50">
+      <capacity fillType="POTATO" capacity="60000" />
+      <capacity fillType="WASTEPOTATO" capacity="5050" />
+      <capacity fillType="SEEDPOTATO" capacity="5050" />
+      <capacity fillType="PREMIUMPOTATO" capacity="5050" />
+      <capacity fillType="PREMIUMBAGGED" capacity="1400" />
+      <capacity fillType="BAGGEDSEEDPOTATO" capacity="1400" />
+      <capacity fillType="PIGFOOD" capacity="1400" />
+    </storage>
+    <sellingStation node="sellingStation" supportsExtension="false">
+      <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="POTATO SEEDPOTATO PREMIUMPOTATO WASTEPOTATO" />
+    </sellingStation>
+    <palletSpawner node="Palletspawner">
+      <spawnPlaces>
+        <spawnPlace startNode="spawnSpace1start"/>
+        <!--spawnPlace startNode="spawnSpace2start" />
+        <spawnPlace startNode="spawnSpace3start" /-->
+      </spawnPlaces>
+    </palletSpawner>
+    <sounds>
+      <active template="grainMillWork" linkNode="0>1|4|0|5" />
+    </sounds>
+  </productionPoint>
+  
+  <animatedObjects>  
+    <!--Rotator-->	
+    <animatedObject index="Boxrotator">
+      <controls triggerNode="0>1|4|4|1" posAction="ACTIVATE_HANDTOOL" posText="action_startBoxfiller" negText="action_startBoxfiller" autoopen="false" />
+      <animation initialTime="0" duration="60">
+        <part node="0>1|4|3">
+          <keyFrame time="0.00" rotation="0 0 0" />
+          <keyFrame time="0.20" rotation="-110 0 0" />
+          <keyFrame time="0.80" rotation="-110 0 0" />		  
+		  <keyFrame time="1.00" rotation="0 0 0" />		  
+        </part>
+      </animation>
+      <sounds>
+        <moving linkNode="0>1|4|3" template="metalDoorsLoop" />
+        <posEnd linkNode="0>1|4|3" template="metalDoorsOpen" />
+        <negEnd linkNode="0>1|4|3" template="metalDoorsClose" />
+      </sounds>
+    </animatedObject>
+  </animatedObjects>	
+
+	
+    <triggerMarkers>
+        <triggerMarker node="0>1|4|1|3" filename="$data/shared/assets/marker/markerIcons.xml" id="EXCLAMATION_MARK" adjustToGround="true" />
+    </triggerMarkers> 
+
+  <i3dMappings>
+	<i3dMapping id="AiUpdateAreaStart" node="0>0|0" />
+    <i3dMapping id="AiUpdateAreaEnd" node="0>0|0|0" />
+    <i3dMapping id="ClearStart" node="0>0|1" />
+    <i3dMapping id="ClearHeight" node="0>0|1|0" />
+    <i3dMapping id="ClearWidth" node="0>0|1|1" />
+    <i3dMapping id="Decorations" node="0>0|2" />
+    <i3dMapping id="IndoorStart" node="0>0|3" />
+    <i3dMapping id="IndoorHeight" node="0>0|3|0" />
+    <i3dMapping id="IndoorWidth" node="0>0|3|1" />
+    <i3dMapping id="LevelingStart" node="0>0|4" />
+    <i3dMapping id="LevelingHeight" node="0>0|4|0" />
+    <i3dMapping id="LevelingWidth" node="0>0|4|1" />
+    <i3dMapping id="TestStart" node="0>0|5" />
+    <i3dMapping id="TestEnd" node="0>0|5|0" />
+    <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>0|6" />
+    <i3dMapping id="tipOcclusionUpdateArea1End" node="0>0|6|0" />
+    <i3dMapping id="Palletspawner" node="0>1|4|1|0" />
+    <i3dMapping id="spawnSpace1start" node="0>1|4|1|0|0" />
+    <i3dMapping id="spawnSpace1end" node="0>1|4|1|0|0|0" />
+    <i3dMapping id="spawnSpace2start" node="0>1|4|1|0|1" />
+    <i3dMapping id="spawnSpace2end" node="0>1|4|1|0|1|0" />
+    <i3dMapping id="spawnSpace3start" node="0>1|4|1|0|2" />
+    <i3dMapping id="spawnSpace3end" node="0>1|4|1|0|2|0" />
+    <i3dMapping id="playerTrigger" node="0>1|4|1|1" />
+    <i3dMapping id="unloadTrigger" node="0>1|4|1|2" />	
+  </i3dMappings>
+</placeable>

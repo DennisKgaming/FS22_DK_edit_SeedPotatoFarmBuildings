@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+	<!--Filltypes-->
+        <text name="fillType_sorted_potato" 		text="Saatkartoffeln" />
+        <text name="fillType_premium_potato" 		text="Premium-Kartoffeln" />
+        <text name="fillType_potato_pigfood" 		text="Abfallkartoffeln" />
+        <text name="fillType_premium_bagged_potato" text="Premium-Kartoffeln in großen Säcken" />
+        <text name="fillType_bagged_sorted_potato" 	text="Saatkartoffeln in großen Säcken" />
+        <text name="fillType_bigbags" 				text="Große Säcke" />
+        <text name="fillType_emptypallets" 			text="Leere Paletten" />
+	<!--Pallets-->
+        <text name="storeItem_BigBags" 				text="Große Säcke" />
+        <text name="storeItem_PotatoBox" 			text="Kartoffelkiste" />
+        <text name="storeItem_PersistentPotatoBox" 	text="Persistente  Kartoffelkiste" />
+        <text name="storeItem_ManureBox" 			text="Mist-Kiste" />
+        <text name="storeItem_Mediumsize" 			text="Mittlere Größe" />
+        <text name="storeItem_EmptyPallets" 		text="Leere Paletten" />
+        <text name="storeItem_PremiumBagged" 		text="Premium-Kartoffeln in großen Säcken" />
+        <text name="storeItem_Premium" 				text="Premium-Kartoffeln" />
+        <text name="storeItem_Bagged_sorted_potato" text="Big Bags" />
+        <text name="storeItem_StoneBox" 			text="Steine-Kiste" />
+        <text name="storeItem_Bagged_potato_pigfood" text="Abfallkartoffeln in großen Säcken" />
+        <text name="storeItem_potato_pigfood" 		text="Abfallkartoffeln" />
+	<!--Buildings-->	
+        <text name="storeItem_extensionshed" 		text="Kartoffellager Erweiterung" />
+        <text name="storeItem_newsortingshed" 		text="Neue Kartoffel-Sortierhalle" />
+        <text name="storeItem_sorterlarge" 			text="Großer Kartoffelsortierer mit Abfüller" />
+        <text name="storeItem_sortersmall" 			text="Kartoffel Sortier" />
+        <text name="storeItem_sortingshed" 			text="Kartoffellager- und Sortierhalle" />
+        <text name="storeItem_sprayerstore" 		text="Düngerlager" />
+        <text name="storeItem_bgaextended" 			text="BGA 99kw Erweitert" />
+        <text name="storeItem_marketextended" 		text="Bauernmarkt Erweitert" />
+        <text name="storeItem_superextended" 		text="Supermarkt  erweitert" />
+        <text name="storeItem_sellpointsmall1" 		text="Verkaufsstation 1" />
+        <text name="storeItem_sellpointsmall2" 		text="Verkaufsstation 2" />
+        <text name="storeItem_sellpointsmall3" 		text="Verkaufsstation 3" />
+        <text name="storeItem_sellpointsmall4" 		text="Verkaufsstation 4" />
+	<!--Actions-->	
+		<text name="action_lightOn"					text= "Licht anschalten"/>
+		<text name="action_lightOut"				text= "Licht ausschalten"/>
+		<text name="fridge_on"						text= "Kühlzyklus starten"/>
+		<text name="fridge_off"						text= "Aufwärmzyklus starten"/>
+
+		<text name="Automaticdoors_on"				text= "Automatische Kühltüren aktivieren"/>
+		<text name="Automaticdoors_off"				text= "Automatische Kühltüren deaktivieren"/>
+		<text name="Fans1_on"						text= "Zelle 1 Ventilatoren aktivieren"/>
+		<text name="Fans1_off"						text= "Zelle 1 Ventilatoren deaktivieren"/>
+		<text name="Fans2_on"						text= "Zelle 2 Ventilatoren aktivieren"/>
+		<text name="Fans2_off"						text= "Zelle 2 Ventilatoren deaktivieren"/>
+		<text name="Cooling1_on"					text= "Zelle 1 Kühlung aktivieren"/>
+		<text name="Cooling1_off"					text= "Zelle 1 Kühlung deaktivieren"/>
+		<text name="Cooling2_on"					text= "Zelle 2 Kühlung aktivieren"/>
+		<text name="Cooling2_off"					text= "Zelle 2 Kühlung deaktivieren"/>
+		<text name="Shutters1_on"					text= "Jalousien Zelle 1 öffnen"/>
+		<text name="Shutters1_off"					text= "Jalousien Zelle 2 schließen"/>
+		<text name="Shutters2_on"					text= "Jalousien Zelle 2 öffnen"/>
+		<text name="Shutters2_off"					text= "Jalousien Zelle 2 schließen"/>
+		<text name="action_startBoxfiller"			text= "Befüller starten"/>
+		<text name="action_resetBoxfiller"			text= "Befüller zurücksetzen"/>
+		<text name="action_openvents"				text= "Außenjalousien öffnen"/>
+		<text name="action_closevents"				text= "Außenjalousien schließen"/>	
+	<!--Productions-->	
+        <text name="fillType_Potatosorting" 		text="Kartoffelsortierung" />
+        <text name="fillType_Premiumbagger" 		text="Premium-Kartoffeln Absacken" />
+        <text name="fillType_Seedbagger" 			text="Saatkartoffeln Absacken" />
+        <text name="fillType_Wastebagger"			text="Abfallkartoffeln Absacken" />
+        <text name="fillType_Potatosortingbagged" 	text="Kartoffelsortierung in Big Bags" />		
+    </texts>
+</l10n>

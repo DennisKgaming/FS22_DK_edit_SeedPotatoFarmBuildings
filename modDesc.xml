@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="72">
+    <author>Dazed</author>
+    <version>1.1.0.0</version>
+	<title>
+		<en>Seedpotato Farm Buildings Pack DK edit</en>
+		<de>Saatkartoffel Hofgebäude-Pack DK edit</de>
+	</title>
+<description>
+<en><![CDATA[
+A large Arable farm which specialises in the cultivation and distribution of seed potatoes to be used by other farmers. This pack contains the productions, buildings and new fruit types that are compatible with the vehcile pack but can also be used on it's own.
+
+Products & Pallets:
+- Waste Potatoes (Price -70%)
+- Seed Potatoes (Price - no change)
+- Premium Potatoes (Price +40%)
+- Bagged Seed Potatoes (Price +12%)
+- Bagged (25Kg) Premium Potatoes (Price +63%)
+- Bagged waste potatoes - Not for sale, used as pigfood.
+
+Price changes are compared to normal potatoes, please note that these prices might fluctuate relatively to each other.
+
+
+Buildings:
+
+- Sorting Shed:
+A large shed which has a sorting area with sorter and bagger, machine storage area, and 2 refrigerated cells where potatoes can be stored for winter processing.
+Price: £455,000
+
+- Expansion shed:
+A large shed which has 4 refrigerated cells where potatoes can be stored for winter processing.
+Price: £350,000
+
+- Sprayer store:
+A shipping container which the farm has converted with a fuel tank inside, water tanks on top, and shelves to store chemicals. Holds 30,000L in total for you to split how you like.
+Price: £20,500
+
+- Workshop:
+A shipping container which the farm has converted to a workshop.
+Price: £23,000
+
+- Sorter small:
+A small freestanding potato sorting machine that can be placed in an existing building.
+Price: £103,400
+
+- Sorter large:
+A large freestanding potato sorting and bagging machine that can be placed in an existing building.
+Price: £275,000
+
+
+Sellpoints:
+
+- Farmers Market Extended:
+Allows you to sell Waste potatoes, Seed potatoes, and Premium potatoes together with all the other base crops that the Farmer's market accepts.
+Price: £55,000
+
+- Supermarket Extended:
+Allows you to sell Premium potatoes together with all the other base crops that the supermarket accepts.
+Price: £80,000
+
+- BGA 99 KW Extended:
+Allows you to turn Waste potatoes into Electricity, Methane, and Digestate.
+Price: £435,000
+
+- Sellpoint small 1 through 4:
+A set of smaller sellpoints that can be placed without disturbing the ground, each point accepts different filltypes with point 4 accepting all of them.
+Price: £1
+
+
+Changelog 1.1.0.0:
+- Added support for multibuy
+- Added persistent potato boxes
+- Added support for the Magsi box tipper
+- Added a new sorting shed
+- Added new filltypes; big bags and empty pallets
+
+Features of the new sorting shed:
+- New sorter that cleans out stones and clods (manure)
+- New Bagger that requires empty pallets and big bags
+- Fridge doors that work with the AnimatedObject Extend mod
+- Weather station
+- Electric charge station
+]]></en>
+<de><![CDATA[
+Ein großer Ackerbaubetrieb, der sich auf den Anbau und Vertrieb von Saatkartoffeln zur Verwendung durch andere Landwirte spezialisiert hat. Dieses Paket enthält die Produktionen, Gebäude und neuen Fruchtsorten, die mit dem Fahrzeugpaket kompatibel sind, aber auch eigenständig verwendet werden können.
+
+Produkte & Paletten:
+- Abfallkartoffeln (Preis -70%)
+- Saatkartoffeln (Preis - keine Änderung)
+- Premium-Kartoffeln (Preis +40%)
+- Saatkartoffeln in Säcken (Preis +12%)
+- Premium-Kartoffeln in Säcken (25Kg) (Preis +63%)
+- Abfallkartoffeln in Säcken - nicht zum Verkauf, Verwendung als Schweinefutter.
+
+Die Preisänderungen beziehen sich auf normale Kartoffeln. Bitte beachten Sie, dass diese Preise relativ zueinander schwanken können.
+
+
+Gebäude:
+
+- Sortierhalle:
+Eine große Halle mit einem Sortierbereich, Sortiermaschine und Absackmaschine, einem Lagerbereich für Maschinen und 2 Kühlzellen, in denen die Kartoffeln für die Winterverarbeitung gelagert werden können.
+Preis: 455000 €
+
+- Kartoffellager Erweiterung:
+Eine große Halle mit 4 Kühlzellen, in denen die Kartoffeln für die Winterverarbeitung gelagert werden können.
+Preis: 350000 €
+
+-Spritzenhaus:
+Ein von der Farm umgebauter Schiffscontainer mit einem Kraftstofftank im Inneren, Wassertanks auf der Oberseite und Regalen zur Lagerung von Chemikalien. Insgesamt fasst er 30.000 Liter, die Sie nach Belieben aufteilen können.
+Preis: 20500 €
+
+- Werkstatt:
+Ein Schiffscontainer, den der Bauernhof zu einer Werkstatt umgebaut hat.
+Preis: 23000 €
+
+- Sortiermaschine Klein:
+Eine kleine, freistehende Kartoffelsortiermaschine, die in einem bestehenden Gebäude aufgestellt werden kann.
+Preis: 103400 €
+
+- Sortiermaschine groß:
+Eine große, freistehende Kartoffelsortier- und -Verpackungsmaschine, die in einem bestehenden Gebäude aufgestellt werden kann.
+Preis: 275000 €
+
+Verkaufsstellen:
+
+- Bauernmarkt Extended:
+Ermöglicht den Verkauf von Abfallkartoffeln, Pflanzkartoffeln und Premium-Kartoffeln zusammen mit allen anderen Basiskulturen, die auf dem Bauernmarkt akzeptiert werden.
+Preis: 55000 €
+
+- Supermarkt Erweitert:
+Ermöglicht Ihnen den Verkauf von Premium-Kartoffeln zusammen mit allen anderen Basiskulturen, die der Supermarkt annimmt.
+Preis: 80000 €
+
+- BGA 99 KW Erweitert:
+Ermöglicht die Umwandlung von Kartoffelabfällen in Elektrizität, Methan und Gärreste.
+Preis: 435000 €
+
+- Kleinere Verkaufsstellen 1 bis 4:
+Eine Reihe kleinerer Verkaufspunkte, die ohne Störung des Bodens platziert werden können. Jeder Punkt akzeptiert verschiedene Fülltypen, wobei Punkt 4 alle akzeptiert.
+Preis: 1 €
+
+Changelog 1.1.0.0:
+- Unterstützung für Multikauf hinzugefügt
+- Persistente Kartoffelkisten hinzugefügt
+- Unterstützung für den Magsi-Kistenkipper hinzugefügt
+- Neue Sortierhalle hinzugefügt
+- Neue Fülltypen hinzugefügt; Big Bags und Leerpaletten
+
+Merkmale der neuen Sortierhalle:
+- Neuer Sortierer, der Steine ​​und Klumpen (Mist) entfernt
+- Neuer Abfüller, der leere Paletten und große Säcke benötigt
+- Kühlraumtüren, die mit dem AnimatedObject Extend-Mod funktionieren
+- Wetterstation
+- Elektrische Ladestation
+]]></de>
+</description>
+	
+	<placeableTypes>
+		<type name="sortingshed" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua">
+				<specialization name="buyingStation" />				
+				<specialization name="chargingStation" />
+				<specialization name="productionPoint" />
+				<specialization name="infoTrigger" />	
+				<specialization name="weatherStation" />					
+		</type>
+	</placeableTypes>
+	
+   <vehicleTypes>
+        <type name="dischargeable_pallet" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+            <specialization name="attachable" />
+            <specialization name="bunkerSiloInteractor"/>
+            <specialization name="shovel"/>
+            <specialization name="vehicleSettings" />
+            <specialization name="baseMaterial" />
+            <specialization name="tipOccluder" />
+            <specialization name="foliageBending" />
+            <specialization name="dynamicallyLoadedParts" />
+            <specialization name="mountable" />
+            <specialization name="dashboard" />
+            <specialization name="animatedVehicle" />
+            <specialization name="fillUnit" />
+            <specialization name="fillVolume" />
+            <specialization name="fillTriggerVehicle" />
+            <specialization name="dischargeable" />
+            <specialization name="tensionBeltObject" />
+            <specialization name="wearable" />
+        </type>
+    </vehicleTypes>	
+
+	
+	
+    <iconFilename>icon_SeedPotatoFarmBuildings.dds</iconFilename>
+    <l10n filenamePrefix="Translations/l10n"/>	
+    <multiplayer supported="true"/>
+	<fillTypes filename="XML/fillTypes.xml" />
+    <storeItems>
+        <storeItem rootNode="placeable" xmlFilename="Buildings/SortingShed/Sortingshed.xml"/>
+        <storeItem rootNode="placeable" xmlFilename="Buildings/Extension/Expansionshed.xml"/>
+		<storeItem rootNode="placeable" xmlFilename="Buildings/Sprayershop/Sprayerstore.xml"/>	
+		<storeItem rootNode="placeable" xmlFilename="Buildings/Workshop/workshop.xml"/>	
+		<storeItem rootNode="placeable" xmlFilename="Buildings/Sortersmall/Sortersmall.xml"/>
+		<storeItem rootNode="placeable" xmlFilename="Buildings/Sorterlarge/Sorterlarge.xml"/>						
+		<storeItem rootNode="placeable" xmlFilename="Buildings/Stores/farmersMarket.xml"/>	
+		<storeItem rootNode="placeable" xmlFilename="Buildings/Stores/supermarket.xml"/>
+		<storeItem rootNode="placeable" xmlFilename="Buildings/Stores/bga99kw.xml"/>		
+		<storeItem rootNode="placeable" xmlFilename="Buildings/Stores/sellpointsmall_1.xml"/>
+		<storeItem rootNode="placeable" xmlFilename="Buildings/Stores/sellpointsmall_2.xml"/>	
+		<storeItem rootNode="placeable" xmlFilename="Buildings/Stores/sellpointsmall_3.xml"/>	
+		<storeItem rootNode="placeable" xmlFilename="Buildings/Stores/sellpointsmall_4.xml"/>			
+        <storeItem rootNode="vehicle" xmlFilename="Pallets/Empty/PotatoBox.xml"/>
+        <storeItem rootNode="vehicle" xmlFilename="Pallets/Empty/PersistentPotatoBox.xml" />	
+        <storeItem rootNode="vehicle" xmlFilename="Pallets/Empty/multiPurchasePotatoBox.xml"/>		
+        <storeItem rootNode="vehicle" xmlFilename="Pallets/Empty/multiPurchasePotatoBoxReusable.xml"/>		
+        <storeItem rootNode="vehicle" xmlFilename="Pallets/Wastesize/Wastesize.xml"/>
+        <storeItem rootNode="vehicle" xmlFilename="Pallets/Mediumsize/Mediumsize.xml"/>
+        <storeItem rootNode="vehicle" xmlFilename="Pallets/Premiumsize/Premiumsize.xml"/>
+        <storeItem rootNode="vehicle" xmlFilename="Pallets/Stone/Stone.xml"/>
+        <storeItem rootNode="vehicle" xmlFilename="Pallets/Manure/Manure.xml"/>		
+        <storeItem xmlFilename="Pallets/Premiumbagged/PremiumBagged.xml"/>
+        <storeItem xmlFilename="Pallets/Seedpotatobagged/Seedpotatobagged.xml"/>	
+		<storeItem xmlFilename="Pallets/Wastepotatobagged/WastepotatoBagged.xml"/>
+        <storeItem xmlFilename="Pallets/Pallets/Pallets.xml"/>
+        <storeItem xmlFilename="Pallets/BigBags/BigBagStackPallet.xml"/>		
+		<storeItem rootNode="placeable" xmlFilename="Buildings/NewSortingShed/NewSortingShed.xml"/>		
+    </storeItems>
+</modDesc>

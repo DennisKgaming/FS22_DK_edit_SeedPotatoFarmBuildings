@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='utf-8'?>
+<vehicle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="dischargeable_pallet" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+  <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+  <storeData>
+    <name> $l10n_storeItem_ManureBox </name>
+    <image>$data/store/store_empty.png</image>
+    <category>pallets</category>
+    <brand>LIZARD</brand>
+    <showInStore>false</showInStore>
+    <canBeSold>false</canBeSold>
+    <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>77056</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>10496</indexBufferMemoryUsage>
+        <textureMemoryUsage>917504</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+  </storeData>
+  <base>
+    <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+    <filename>Pallets/Manure/Manure.i3d</filename>
+    <size width="1.85" length="1.2" height="1.1" />
+    <canBeReset>false</canBeReset>
+    <components>
+      <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="50" />
+    </components>
+    <showInVehicleMenu>false</showInVehicleMenu>
+    <mapHotspot available="false" />
+  </base>
+     <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="MANURE" capacity="2000">
+                        <exactFillRootNode node="exactFillRootNode"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+    <fillVolume>
+        <fillVolumeConfigurations>
+            <fillVolumeConfiguration>
+                <volumes>
+                    <volume node="0>2" maxAllowedHeapAngle="10" fillUnitIndex="1"/>
+                </volumes>
+            </fillVolumeConfiguration>
+        </fillVolumeConfigurations>
+    </fillVolume>
+ <dischargeable>
+        <dischargeNode node="dischargeNode2"  fillUnitIndex="1" unloadInfoIndex="1" allowAIDischarge="true" emptySpeed="1000" >
+            <raycast node="dischargeNode2" maxDistance="30" useWorldNegYDirection="true" yOffset="2"/>
+            <info width="2.0" length="1" zOffset="0.5"/>
+            <effects>
+                <effectNode effectClass="TipEffect">
+                    <effectNode effectNode="emitterShape" effectClass="ParticleEffect" materialType="unloadingParticle"/>
+                </effectNode>
+            </effects>
+        </dischargeNode>
+        <dischargeNode node="dischargeNode3" fillUnitIndex="1" emptySpeed="1000" >
+            <raycast node="dischargeNode3" maxDistance="30" useWorldNegYDirection="true" yOffset="2"/>
+            <info width="2.0" length="1" zOffset="0.5"/>
+            <effects>
+                <effectNode effectClass="TipEffect">
+                    <effectNode effectNode="emitterShape" effectClass="ParticleEffect" materialType="unloadingParticle"/>
+                </effectNode>
+            </effects>
+        </dischargeNode>
+    </dischargeable>
+    
+    <shovel>
+        <dischargeInfo node="dischargeNode2" minSpeedAngle="105" maxSpeedAngle="180" />
+        <dischargeInfo node="dischargeNode3" minSpeedAngle="105" maxSpeedAngle="180" />
+    </shovel>
+ <dynamicMount triggerNode="0>7"/>
+    <tensionBeltObject>
+        <meshNodes>
+            <meshNode node="fillablePallet_vis"/>
+        </meshNodes>
+    </tensionBeltObject>
+  <i3dMappings>
+    <i3dMapping id="fillablePallet_vis" node="0>" />
+    <i3dMapping id="exactFillRootNode" node="0>1|0" />
+    <i3dMapping id="filltrigger" node="0>1|1" />
+    <i3dMapping id="emitterShape" node="0>1|2" />		
+    <i3dMapping id="fillvolume" node="0>2" />
+    <i3dMapping id="Size1" node="0>3" />
+    <i3dMapping id="Size2" node="0>4" />
+    <i3dMapping id="Size3" node="0>5" />
+    <i3dMapping id="dischargeNode" node="0>6" />
+    <i3dMapping id="dynamicMounttrigger" node="0>7" />
+    <i3dMapping id="dischargeNode2" node="0>8" />
+    <i3dMapping id="dischargeNode3" node="0>9" />	
+  </i3dMappings>
+</vehicle>

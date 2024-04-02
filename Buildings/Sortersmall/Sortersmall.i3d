@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Potatoshed" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+    <Material name="Black Metal" materialId="4" diffuseColor="0 0 0 1" specularColor="0.74902 1 0.4">
+    </Material>
+    <Material name="i3d_default_material" materialId="5" diffuseColor="0.8 0.8 0.8 1" specularColor="0.6 1 0">
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="Red Paint.001" materialId="7" diffuseColor="0.337255 0.0156863 0.00392157 1">
+    </Material>
+    <Material name="Rubber" materialId="8" diffuseColor="0.00392157 0.00392157 0.00392157 1" specularColor="0.6 1 0">
+    </Material>
+    <Material name="Stainless Steel" materialId="9" diffuseColor="0.8 0.8 0.8 1" specularColor="0.847059 1 1">
+    </Material>
+    <Material name="UnnamedMaterial" materialId="10" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Sortersmall.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="Williamson Farms" nodeId="17">
+        <TransformGroup name="Gameplay" nodeId="18">
+          <TransformGroup name="Clearareas" nodeId="19">
+            <TransformGroup name="ClearStart" translation="-9.71442 0.003335 18.4663" nodeId="20">
+              <TransformGroup name="ClearHeight" translation="-0.0341911 -0.000788376 -40.2547" nodeId="21"/>
+              <TransformGroup name="ClearWidth" translation="19.9245 0.00172603 0.000141144" nodeId="22"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="Leveling" nodeId="23">
+            <TransformGroup name="LevelingStart" translation="-11.9663 0.003335 24.0473" nodeId="24">
+              <TransformGroup name="LevelingHeight" translation="-0.0341911 -0.000788376 -51.4663" nodeId="25"/>
+              <TransformGroup name="LevelingWidth" translation="23.8993 0.00172603 0.000141144" nodeId="26"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="Indoor" nodeId="27">
+            <TransformGroup name="IndoorStart" translation="-9.71442 0.003335 18.4663" nodeId="28">
+              <TransformGroup name="IndoorHeight" translation="-0.0341911 -0.000788376 -40.2547" nodeId="29"/>
+              <TransformGroup name="IndoorWidth" translation="19.9245 0.00172603 0.000141144" nodeId="30"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="Testareas" nodeId="31">
+            <TransformGroup name="TestStart" translation="-4.816 0.003335 2.222" nodeId="32">
+              <TransformGroup name="TestEnd" translation="11.528 -0.000788376 -2.681" nodeId="33"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="tipOcclusionUpdateArea" nodeId="34">
+            <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-9.71442 0.003335 18.4663" nodeId="35">
+              <TransformGroup name="tipOcclusionUpdateArea1End" translation="20.034 -0.000788376 -40.2547" nodeId="36"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="Aiareas" nodeId="37">
+            <TransformGroup name="AiUpdateAreaStart" translation="-4.816 0.003335 2.222" nodeId="38">
+              <TransformGroup name="AiUpdateAreaEnd" translation="11.528 -0.000788376 -2.681" nodeId="39"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="Potato Shed" nodeId="40"/>
+        <TransformGroup name="Production" translation="0 0 13.4688" nodeId="41">
+          <Shape shapeId="1" name="Autograder" translation="-3.8603 0.01 -13.1248" scale="0.04 0.01 0.04" clipDistance="300" nodeId="42" materialIds="7,8,9,4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="Hopper" translation="6.27458 0.217392 -12.2038" rotation="-0 90 0" static="true" clipDistance="300" nodeId="43" materialIds="7,8,9" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="Palletspawner" translation="-1.19366 0 -13.3902" nodeId="44">
+            <TransformGroup name="spawnSpace1start" translation="2.628 0 -1.05836" nodeId="45">
+              <TransformGroup name="spawnSpace1end" translation="-6.239 0 0" nodeId="46"/>
+            </TransformGroup>
+            <TransformGroup name="spawnSpace2start" translation="-1.20553 0 -1.05836" nodeId="47">
+              <TransformGroup name="spawnSpace2end" translation="-1.75014 0 0" nodeId="48"/>
+            </TransformGroup>
+            <TransformGroup name="spawnSpace3start" translation="0.669998 0 -1.05836" nodeId="49">
+              <TransformGroup name="spawnSpace3end" translation="-1.75014 0 0" nodeId="50"/>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape shapeId="3" name="playerTrigger" translation="3.453 0.853356 -13.627" scale="2 1 1" static="true" trigger="true" collisionMask="3145728" clipDistance="500" nodeId="51" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="4" name="unloadTrigger" translation="7.45183 0 -12.631" static="true" trigger="true" collisionMask="1073741824" nodeId="52" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="5" name="Grader Collision" translation="0.353196 0.998983 -12.6785" scale="8.86332 2.15825 1" static="true" nodeId="53" materialIds="10" nonRenderable="true" distanceBlending="false"/>
+          <TransformGroup name="TriggerIcon" translation="3.453 0 -13.627" nodeId="56"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

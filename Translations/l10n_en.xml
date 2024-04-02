@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <texts>
+	<!--Filltypes-->
+        <text name="fillType_sorted_potato" 		text="Seed Potatoes" />
+        <text name="fillType_premium_potato" 		text="Premium Potatoes" />
+        <text name="fillType_potato_pigfood" 		text="Waste Potatoes" />
+        <text name="fillType_premium_bagged_potato" text="Big Bagged Premium Potato bags" />
+        <text name="fillType_bagged_sorted_potato" 	text="Big Bagged Seed Potatoes" />
+        <text name="fillType_bigbags" 				text="Big Bag" />
+        <text name="fillType_emptypallets" 			text="Empty Pallets" />
+	<!--Pallets-->
+        <text name="storeItem_BigBags" 				text="Big Bags" />
+        <text name="storeItem_PotatoBox" 			text="Potato Box" />
+        <text name="storeItem_PersistentPotatoBox" 	text="Persistent Potato Box" />
+        <text name="storeItem_ManureBox" 			text="Manure Box" />
+        <text name="storeItem_Mediumsize" 			text="Medium Size" />
+        <text name="storeItem_EmptyPallets" 		text="Empty Pallets" />
+        <text name="storeItem_PremiumBagged" 		text="Big Bagged Premium Potato bags" />
+        <text name="storeItem_Premium" 				text="Premium Potatoes" />
+        <text name="storeItem_Bagged_sorted_potato" text="Big Bags" />
+        <text name="storeItem_StoneBox" 			text="Stone Box" />
+        <text name="storeItem_Bagged_potato_pigfood" text="Big Bagged Pigfood" />
+        <text name="storeItem_potato_pigfood" 		text="Waste Potatoes" />
+	<!--Buildings-->	
+        <text name="storeItem_extensionshed" 		text="Potato Storage Expansion" />
+        <text name="storeItem_newsortingshed" 		text="New Potato Sortingshed" />
+        <text name="storeItem_sorterlarge" 			text="Large Potato Sorter With Bagger" />
+        <text name="storeItem_sortersmall" 			text="Potato Sorter" />
+        <text name="storeItem_sortingshed" 			text="Potato Storage and Sorting Shed" />
+        <text name="storeItem_sprayerstore" 		text="Sprayerstore" />
+        <text name="storeItem_bgaextended" 			text="bga99kw Extended" />
+        <text name="storeItem_marketextended" 		text="Farmersmarket Expanded" />
+        <text name="storeItem_superextended" 		text="Supermarket Expanded" />
+        <text name="storeItem_sellpointsmall1" 		text="Selling station 1" />
+        <text name="storeItem_sellpointsmall2" 		text="Selling station 2" />
+        <text name="storeItem_sellpointsmall3" 		text="Selling station 3" />
+        <text name="storeItem_sellpointsmall4" 		text="Selling station 4" />
+	<!--Actions-->	
+		<text name="action_lightOn"					text= "Switch light on"/>
+		<text name="action_lightOut"				text= "Switch light off"/>
+		<text name="action_fridge_on"				text= "Start cooling cycle"/>
+		<text name="action_fridge_off"				text= "Start warming cycle"/>
+
+		<text name="action_Automaticdoors_on"		text= "Activate automatic fridgedoors"/>
+		<text name="action_Automaticdoors_off"		text= "De-activate automatic fridgedoors"/>
+		<text name="action_Fans1_on"				text= "Activate Cell 1 Fans"/>
+		<text name="action_Fans1_off"				text= "De-activate Cell 1 Fans"/>
+		<text name="action_Fans2_on"				text= "Activate Cell 2 Fans"/>
+		<text name="action_Fans2_off"				text= "De-activate Cell 2 Fans"/>
+		<text name="action_Cooling1_on"				text= "Activate Cell 1 cooling"/>
+		<text name="action_Cooling1_off"			text= "De-activate Cell 1 cooling"/>
+		<text name="action_Cooling2_on"				text= "Activate Cell 2 cooling"/>
+		<text name="action_Cooling2_off"			text= "De-activate Cell 2 cooling"/>
+		<text name="action_Shutters1_on"			text= "Open Cell 1 shutters"/>
+		<text name="action_Shutters1_off"			text= "Close Cell 1 shutters"/>
+		<text name="action_Shutters2_on"			text= "Open Cell 2 shutters"/>
+		<text name="action_Shutters2_off"			text= "Close Cell 2 shutters"/>
+		<text name="action_startBoxfiller"			text= "Start Filler"/>
+		<text name="action_resetBoxfiller"			text= "Reset Filler"/>
+		<text name="action_openvents"				text= "Open Air Shutters"/>
+		<text name="action_closevents"				text= "Close Air Shutters"/>	
+	<!--Productions-->	
+        <text name="fillType_Potatosorting" 		text="Potatosorting" />
+        <text name="fillType_Premiumbagger" 		text="Premium Potato Bagging" />
+        <text name="fillType_Seedbagger" 			text="Seed Potato Bagging" />
+        <text name="fillType_Wastebagger"			text="Waste Potato Bagging" />
+        <text name="fillType_Potatosortingbagged" 	text="Potatosorting Bagged" />		
+    </texts>
+</l10n>

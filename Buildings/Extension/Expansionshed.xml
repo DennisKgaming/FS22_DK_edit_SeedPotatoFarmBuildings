@@ -1,0 +1,541 @@
+<?xml version='1.0' encoding='utf-8'?>
+<placeable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="simplePlaceable" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+  <storeData>
+        <name>$l10n_storeItem_extensionshed</name>
+    <functions>
+      <function>$l10n_function_garage</function>
+    </functions>
+    <image>Buildings/Extension/store_Extension.dds</image>
+    <price>350000</price>
+    <dailyUpkeep>25</dailyUpkeep>
+    <lifetime>1000</lifetime>
+    <rotation>0</rotation>
+    <brand>NONE</brand>
+    <species>placeable</species>
+    <category>sheds</category>
+    <canBeSold>true</canBeSold>
+    <showInStore>true</showInStore>
+        <vertexBufferMemoryUsage>536320</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>80128</indexBufferMemoryUsage>
+        <textureMemoryUsage>8585216</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+  </storeData>
+  <base>
+    <filename>Buildings/Extension/Extension.i3d</filename>
+  </base>
+  <placement useRandomYRotation="false" useManualYRotation="true">
+    <testAreas>
+      <testArea startNode="TestStart" endNode="TestEnd" />
+    </testAreas>
+  </placement>
+  <clearAreas>
+    <clearArea startNode="ClearStart" widthNode="ClearWidth" heightNode="ClearHeight" />
+  </clearAreas>
+  <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+    <levelAreas>
+      <levelArea startNode="LevelingStart" widthNode="LevelingWidth" heightNode="LevelingHeight" groundType="concrete" />
+    </levelAreas>
+  </leveling>
+  <indoorAreas>
+    <indoorArea startNode="IndoorStart" widthNode="IndoorWidth" heightNode="IndoorHeight" />
+  </indoorAreas>
+  <tipOcclusionUpdateAreas>
+    <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+  </tipOcclusionUpdateAreas>
+  <ai>
+    <updateAreas>
+      <updateArea startNode="AiUpdateAreaStart" endNode="AiUpdateAreaEnd" />
+    </updateAreas>
+  </ai>
+  <dynamicallyLoadedParts>
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg1l1" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg1l2" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg1l3" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg1l4" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg1l5" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg1l6" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg1l7" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg1l8" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg2l1" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg2l2" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg2l3" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg2l4" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg2l5" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg2l6" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg2l7" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg2l8" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg3l1" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg3l2" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg3l3" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg3l4" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg3l5" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg3l6" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg3l7" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg3l8" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg4l1" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg4l2" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg4l3" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg4l4" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg4l5" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg4l6" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg4l7" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg4l8" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg5l1" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg5l2" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg5l3" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg5l4" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg5l5" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg5l6" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg5l7" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Lightnodeg5l8" filename="$data/shared/assets/lights/terraLed/light150W.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Switchnodegroup1" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Switchnodegroup2" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Switchnodegroup3" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Switchnodegroup4" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="Switchnodegroup5" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
+  </dynamicallyLoadedParts>
+  <animatedObjects>
+    <!--Lights-->
+    <animatedObject index="Lights_Group_1">
+      <animation duration="0.2">
+        <part node="Lightgroup1">
+          <keyFrame time="0.0" visibility="false" />
+          <keyFrame time="1" visibility="true" />
+        </part>
+      </animation>
+      <controls triggerNode="Lighttrigger1" posAction="ACTIVATE_HANDTOOL" posText="action_lightOn" negText="action_lightOut" />
+    </animatedObject>
+    <animatedObject index="Lights_Group_2">
+      <animation duration="0.2">
+        <part node="Lightgroup2">
+          <keyFrame time="0.0" visibility="false" />
+          <keyFrame time="1" visibility="true" />
+        </part>
+      </animation>
+      <controls triggerNode="Lighttrigger2" posAction="ACTIVATE_HANDTOOL" posText="action_lightOn" negText="action_lightOut" />
+    </animatedObject>
+    <animatedObject index="Lights_Group_3">
+      <animation duration="0.2">
+        <part node="Lightgroup3">
+          <keyFrame time="0.0" visibility="false" />
+          <keyFrame time="1" visibility="true" />
+        </part>
+      </animation>
+      <controls triggerNode="Lighttrigger3" posAction="ACTIVATE_HANDTOOL" posText="action_lightOn" negText="action_lightOut" />
+    </animatedObject>
+    <animatedObject index="Lights_Group_4">
+      <animation duration="0.2">
+        <part node="Lightgroup4">
+          <keyFrame time="0.0" visibility="false" />
+          <keyFrame time="1" visibility="true" />
+        </part>
+      </animation>
+      <controls triggerNode="Lighttrigger4" posAction="ACTIVATE_HANDTOOL" posText="action_lightOn" negText="action_lightOut" />
+    </animatedObject>
+    <animatedObject index="Lights_Group_5">
+      <animation duration="0.2">
+        <part node="Lightgroup5">
+          <keyFrame time="0.0" visibility="false" />
+          <keyFrame time="1" visibility="true" />
+        </part>
+      </animation>
+      <controls triggerNode="Lighttrigger5" posAction="ACTIVATE_HANDTOOL" posText="action_lightOn" negText="action_lightOut" />
+    </animatedObject>
+    <!--Fridge Doors-->
+    <animatedObject index="Fridgedoor1">
+      <controls triggerNode="Fridgedoortrigger1" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+      <animation initialTime="0" duration="5">
+        <part node="Fridgedoor1">
+          <keyFrame time="0.05" translation="-7.941 2.226 4.267" />
+          <keyFrame time="1.00" translation="-3.506 2.226 4.223" />
+        </part>
+      </animation>
+      <sounds>
+        <moving linkNode="Fridgedoor1" template="slidingGateMetalLoop" />
+        <posEnd linkNode="Fridgedoor1" template="slidingGateMetalOpen" />
+        <negEnd linkNode="Fridgedoor1" template="slidingGateMetalClose" />
+      </sounds>
+    </animatedObject>
+    <animatedObject index="Fridgedoor2">
+      <controls triggerNode="Fridgedoortrigger2" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+      <animation initialTime="0" duration="5">
+        <part node="Fridgedoor2">
+          <keyFrame time="0.05" translation="2.775 2.233 4.257" />
+          <keyFrame time="1.00" translation="7.221 2.233 4.213" />
+        </part>
+      </animation>
+      <sounds>
+        <moving linkNode="Fridgedoor2" template="slidingGateMetalLoop" />
+        <posEnd linkNode="Fridgedoor2" template="slidingGateMetalOpen" />
+        <negEnd linkNode="Fridgedoor2" template="slidingGateMetalClose" />
+      </sounds>
+    </animatedObject>
+    <animatedObject index="Fridgedoor3">
+      <controls triggerNode="Fridgedoortrigger3" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+      <animation initialTime="0" duration="5">
+        <part node="Fridgedoor3">
+          <keyFrame time="0.05" translation="2.733 2.226 -5.311" />
+          <keyFrame time="1.00" translation="7.222 2.226 -5.267" />
+        </part>
+      </animation>
+      <sounds>
+        <moving linkNode="Fridgedoor3" template="slidingGateMetalLoop" />
+        <posEnd linkNode="Fridgedoor3" template="slidingGateMetalOpen" />
+        <negEnd linkNode="Fridgedoor3" template="slidingGateMetalClose" />
+      </sounds>
+    </animatedObject>
+    <animatedObject index="Fridgedoor4">
+      <controls triggerNode="Fridgedoortrigger4" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+      <animation initialTime="0" duration="5">
+        <part node="Fridgedoor4">
+          <keyFrame time="0.05" translation="-8.109 2.224 -5.311" />
+          <keyFrame time="1.00" translation="-3.652 2.224 -5.267" />
+        </part>
+      </animation>
+      <sounds>
+        <moving linkNode="Fridgedoor4" template="slidingGateMetalLoop" />
+        <posEnd linkNode="Fridgedoor4" template="slidingGateMetalOpen" />
+        <negEnd linkNode="Fridgedoor4" template="slidingGateMetalClose" />
+      </sounds>
+    </animatedObject>
+    <!--Outside door-->
+    <animatedObject index="Outsidedoor">
+      <controls triggerNode="Outsidedoortrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" autoopen="false" />
+      <animation initialTime="0" duration="5">
+        <part node="Outsidedoor">
+          <keyFrame time="0.05" translation="-10.375 1.994 -0.186" />
+          <keyFrame time="1.00" translation="-10.375 1.994 4.000" />
+        </part>
+      </animation>
+      <sounds>
+        <moving linkNode="Outsidedoor" template="slidingGateMetalLoop" />
+        <posEnd linkNode="Outsidedoor" template="slidingGateMetalOpen" />
+        <negEnd linkNode="Outsidedoor" template="slidingGateMetalClose" />
+      </sounds>
+    </animatedObject>
+   <!--Fridgeunits-->
+    <animatedObject index="Fridgeunit1">
+      <controls triggerNode="0>2|0|2|0" posAction="ACTIVATE_HANDTOOL" posText="fridge_on" negText="fridge_off" />
+      <animation initialTime="0" duration="50000">
+        <part node="0>2|0|1|0|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>
+         <part node="0>2|0|1|1|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>
+        <part node="0>2|0|1|2|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>		
+        <part node="0>2|0|1|3|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>		
+        <part node="0>2|0|1|4|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>		
+        <part node="0>2|0|1|5|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+		<!--Fan1-->
+        <part node="0>2|0|1|6|0|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+        <part node="0>2|0|1|6|1|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+		<!--Fan2-->
+        <part node="0>2|0|1|7|0|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+        <part node="0>2|0|1|7|1|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+		<!--Fan3-->
+        <part node="0>2|0|1|8|0|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+        <part node="0>2|0|1|8|1|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>			
+      </animation>
+      <sounds>
+        <moving linkNode="0>2|0|1|3" template="feedingRobotLoop" radius="25" />
+      </sounds>
+    </animatedObject>	
+    <animatedObject index="Fridgeunit2">
+      <controls triggerNode="0>2|1|2|0" posAction="ACTIVATE_HANDTOOL" posText="fridge_on" negText="fridge_off" />
+      <animation initialTime="0" duration="50000">
+        <part node="0>2|1|1|0|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>
+         <part node="0>2|1|1|1|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>
+        <part node="0>2|1|1|2|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>		
+        <part node="0>2|1|1|3|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>		
+        <part node="0>2|1|1|4|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>		
+        <part node="0>2|1|1|5|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+		<!--Fan1-->
+        <part node="0>2|1|1|6|0|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+        <part node="0>2|1|1|6|1|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+		<!--Fan2-->
+        <part node="0>2|1|1|7|0|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+        <part node="0>2|1|1|7|1|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+		<!--Fan3-->
+        <part node="0>2|1|1|8|0|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+        <part node="0>2|1|1|8|1|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>			
+      </animation>
+      <sounds>
+        <moving linkNode="0>2|1|1|3" template="feedingRobotLoop" radius="25" />
+      </sounds>
+    </animatedObject>	
+	<animatedObject index="Fridgeunit3">
+      <controls triggerNode="0>2|2|2|0" posAction="ACTIVATE_HANDTOOL" posText="fridge_on" negText="fridge_off" />
+      <animation initialTime="0" duration="50000">
+        <part node="0>2|2|1|0|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>
+         <part node="0>2|2|1|1|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>
+        <part node="0>2|2|1|2|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>		
+        <part node="0>2|2|1|3|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>		
+        <part node="0>2|2|1|4|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>		
+        <part node="0>2|2|1|5|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+		<!--Fan1-->
+        <part node="0>2|2|1|6|0|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+        <part node="0>2|2|1|6|1|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+		<!--Fan2-->
+        <part node="0>2|2|1|7|0|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+        <part node="0>2|2|1|7|1|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+		<!--Fan3-->
+        <part node="0>2|2|1|8|0|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+        <part node="0>2|2|1|8|1|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>			
+      </animation>
+      <sounds>
+        <moving linkNode="0>2|2|1|3" template="feedingRobotLoop" radius="25" />
+      </sounds>
+    </animatedObject>	
+	<animatedObject index="Fridgeunit4">
+      <controls triggerNode="0>2|3|2|0" posAction="ACTIVATE_HANDTOOL" posText="fridge_on" negText="fridge_off" />
+      <animation initialTime="0" duration="50000">
+        <part node="0>2|3|1|0|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>
+         <part node="0>2|3|1|1|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>
+        <part node="0>2|3|1|2|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>		
+        <part node="0>2|3|1|3|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>		
+        <part node="0>2|3|1|4|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>		
+        <part node="0>2|3|1|5|0">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+		<!--Fan1-->
+        <part node="0>2|3|1|6|0|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+        <part node="0>2|3|1|6|1|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+		<!--Fan2-->
+        <part node="0>2|3|1|7|0|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+        <part node="0>2|3|1|7|1|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+		<!--Fan3-->
+        <part node="0>2|3|1|8|0|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>	
+        <part node="0>2|3|1|8|1|2">
+          <keyFrame time="0.0" rotation="0 0 0"/>
+          <keyFrame time="1.0" rotation="0 0 50000000"/>
+        </part>			
+      </animation>
+      <sounds>
+        <moving linkNode="0>2|3|1|3" template="feedingRobotLoop" radius="25" />
+      </sounds>
+    </animatedObject>	
+	
+	
+	
+  </animatedObjects>
+  <i3dMappings>
+    <i3dMapping id="AiUpdateAreaStart" node="0>0|0" />
+    <i3dMapping id="AiUpdateAreaEnd" node="0>0|0|0" />
+    <i3dMapping id="ClearStart" node="0>0|1" />
+    <i3dMapping id="ClearHeight" node="0>0|1|0" />
+    <i3dMapping id="ClearWidth" node="0>0|1|1" />
+    <i3dMapping id="IndoorStart" node="0>0|2" />
+    <i3dMapping id="IndoorHeight" node="0>0|2|0" />
+    <i3dMapping id="IndoorWidth" node="0>0|2|1" />
+    <i3dMapping id="LevelingStart" node="0>0|3" />
+    <i3dMapping id="LevelingHeight" node="0>0|3|0" />
+    <i3dMapping id="LevelingWidth" node="0>0|3|1" />
+    <i3dMapping id="TestStart" node="0>0|4" />
+    <i3dMapping id="TestEnd" node="0>0|4|0" />
+    <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>0|5" />
+    <i3dMapping id="tipOcclusionUpdateArea1End" node="0>0|5|0" />
+    <i3dMapping id="Outsidedoor" node="0>1|0|1" />
+    <i3dMapping id="Outsidedoortrigger" node="0>1|0|2" />
+    <i3dMapping id="Fridgedoor1" node="0>1|1|0|0" />
+    <i3dMapping id="Fridgedoortrigger1" node="0>1|1|0|2" />
+    <i3dMapping id="Fridgedoor2" node="0>1|1|1|0" />
+    <i3dMapping id="Fridgedoortrigger2" node="0>1|1|1|2" />
+    <i3dMapping id="Fridgedoor3" node="0>1|1|2|0" />
+    <i3dMapping id="Fridgedoortrigger3" node="0>1|1|2|2" />
+    <i3dMapping id="Fridgedoor4" node="0>1|1|3|0" />
+    <i3dMapping id="Fridgedoortrigger4" node="0>1|1|3|2" />
+    <i3dMapping id="Lighttrigger1" node="0>1|2|0|0|0" />
+    <i3dMapping id="Switchnodegroup1" node="0>1|2|0|0|1" />
+    <i3dMapping id="Lightgroup1" node="0>1|2|0|1|0" />
+    <i3dMapping id="Lightnodeg1l8" node="0>1|2|0|2|0" />
+    <i3dMapping id="Lightnodeg1l1" node="0>1|2|0|2|1" />
+    <i3dMapping id="Lightnodeg1l2" node="0>1|2|0|2|2" />
+    <i3dMapping id="Lightnodeg1l3" node="0>1|2|0|2|3" />
+    <i3dMapping id="Lightnodeg1l4" node="0>1|2|0|2|4" />
+    <i3dMapping id="Lightnodeg1l5" node="0>1|2|0|2|5" />
+    <i3dMapping id="Lightnodeg1l6" node="0>1|2|0|2|6" />
+    <i3dMapping id="Lightnodeg1l7" node="0>1|2|0|2|7" />
+    <i3dMapping id="Lighttrigger2" node="0>1|2|1|0|0" />
+    <i3dMapping id="Switchnodegroup2" node="0>1|2|1|0|1" />
+    <i3dMapping id="Lightgroup2" node="0>1|2|1|1|0" />
+    <i3dMapping id="Lightnodeg2l8" node="0>1|2|1|2|0" />
+    <i3dMapping id="Lightnodeg2l1" node="0>1|2|1|2|1" />
+    <i3dMapping id="Lightnodeg2l2" node="0>1|2|1|2|2" />
+    <i3dMapping id="Lightnodeg2l3" node="0>1|2|1|2|3" />
+    <i3dMapping id="Lightnodeg2l4" node="0>1|2|1|2|4" />
+    <i3dMapping id="Lightnodeg2l5" node="0>1|2|1|2|5" />
+    <i3dMapping id="Lightnodeg2l6" node="0>1|2|1|2|6" />
+    <i3dMapping id="Lightnodeg2l7" node="0>1|2|1|2|7" />
+    <i3dMapping id="Lighttrigger3" node="0>1|2|2|0|0" />
+    <i3dMapping id="Switchnodegroup3" node="0>1|2|2|0|1" />
+    <i3dMapping id="Lightgroup3" node="0>1|2|2|1|0" />
+    <i3dMapping id="Lightnodeg3l8" node="0>1|2|2|2|0" />
+    <i3dMapping id="Lightnodeg3l1" node="0>1|2|2|2|1" />
+    <i3dMapping id="Lightnodeg3l2" node="0>1|2|2|2|2" />
+    <i3dMapping id="Lightnodeg3l3" node="0>1|2|2|2|3" />
+    <i3dMapping id="Lightnodeg3l4" node="0>1|2|2|2|4" />
+    <i3dMapping id="Lightnodeg3l5" node="0>1|2|2|2|5" />
+    <i3dMapping id="Lightnodeg3l6" node="0>1|2|2|2|6" />
+    <i3dMapping id="Lightnodeg3l7" node="0>1|2|2|2|7" />
+    <i3dMapping id="Lighttrigger4" node="0>1|2|3|0|0" />
+    <i3dMapping id="Switchnodegroup4" node="0>1|2|3|0|1" />
+    <i3dMapping id="Lightgroup4" node="0>1|2|3|1|0" />
+    <i3dMapping id="Lightnodeg4l8" node="0>1|2|3|2|0" />
+    <i3dMapping id="Lightnodeg4l1" node="0>1|2|3|2|1" />
+    <i3dMapping id="Lightnodeg4l2" node="0>1|2|3|2|2" />
+    <i3dMapping id="Lightnodeg4l3" node="0>1|2|3|2|3" />
+    <i3dMapping id="Lightnodeg4l4" node="0>1|2|3|2|4" />
+    <i3dMapping id="Lightnodeg4l5" node="0>1|2|3|2|5" />
+    <i3dMapping id="Lightnodeg4l6" node="0>1|2|3|2|6" />
+    <i3dMapping id="Lightnodeg4l7" node="0>1|2|3|2|7" />
+    <i3dMapping id="Lighttrigger5" node="0>1|2|4|0|0" />
+    <i3dMapping id="Switchnodegroup5" node="0>1|2|4|0|1" />
+    <i3dMapping id="Lightgroup5" node="0>1|2|4|1|0" />
+    <i3dMapping id="Lightnodeg5l8" node="0>1|2|4|2|0" />
+    <i3dMapping id="Lightnodeg5l1" node="0>1|2|4|2|1" />
+    <i3dMapping id="Lightnodeg5l2" node="0>1|2|4|2|2" />
+    <i3dMapping id="Lightnodeg5l3" node="0>1|2|4|2|3" />
+    <i3dMapping id="Lightnodeg5l4" node="0>1|2|4|2|4" />
+    <i3dMapping id="Lightnodeg5l5" node="0>1|2|4|2|5" />
+    <i3dMapping id="Lightnodeg5l6" node="0>1|2|4|2|6" />
+    <i3dMapping id="Lightnodeg5l7" node="0>1|2|4|2|7" />
+  </i3dMappings>
+</placeable>

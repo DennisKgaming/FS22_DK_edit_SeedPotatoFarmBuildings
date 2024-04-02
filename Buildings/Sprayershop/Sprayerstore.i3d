@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="11" filename="$data/maps/textures/shared/props/cargoContainerBlue_diffuse.png"/>
+    <File fileId="12" filename="$data/maps/textures/shared/props/cargoContainerSet_normal.png"/>
+    <File fileId="13" filename="$data/maps/textures/shared/props/cargoContainerSet_specular.png"/>
+    <File fileId="20" filename="$data/maps/textures/shared/props/gardenSink04_diffuse.png"/>
+    <File fileId="21" filename="$data/maps/textures/shared/props/gardenSink04_normal.png"/>
+    <File fileId="22" filename="$data/maps/textures/shared/props/gardenSink04_specular.png"/>
+    <File fileId="17" filename="$data/maps/textures/shared/props/metalShelf_diffuse.png"/>
+    <File fileId="18" filename="$data/maps/textures/shared/props/metalShelf_normal.png"/>
+    <File fileId="19" filename="$data/maps/textures/shared/props/metalShelf_specular.png"/>
+    <File fileId="23" filename="$data/objects/ksAG/epsoTop/epsoTop_diffuse.png"/>
+    <File fileId="24" filename="$data/objects/ksAG/ksBag_normal.png"/>
+    <File fileId="25" filename="$data/objects/ksAG/ksBag_specular.png"/>
+    <File fileId="10" filename="$data/placeables/lizard/dieselTanks/dieselTanksDecals_diffuse.png"/>
+    <File fileId="2" filename="$data/placeables/lizard/dieselTanks/level02/dieselTanksLevel02_diffuse.png"/>
+    <File fileId="3" filename="$data/placeables/lizard/dieselTanks/level02/dieselTanksLevel02_normal.png"/>
+    <File fileId="4" filename="$data/placeables/lizard/dieselTanks/level02/dieselTanksLevel02_specular.png"/>
+    <File fileId="14" filename="$data/placeables/lizard/waterTanks/level01/waterTankLevel01_diffuse.png"/>
+    <File fileId="15" filename="$data/placeables/lizard/waterTanks/level01/waterTankLevel01_normal.png"/>
+    <File fileId="16" filename="$data/placeables/lizard/waterTanks/level01/waterTankLevel01_specular.png"/>
+    <File fileId="5" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="8" filename="$data/shared/default_normal.png"/>
+    <File fileId="9" filename="$data/shared/default_specular.png"/>
+    <File fileId="7" filename="$data/shared/window_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="cargoContainerBlue_mat" materialId="4" customShaderId="5">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="dieselTanksDecals_mat" materialId="5" alphaBlending="true">
+      <Texture fileId="10"/>
+      <Normalmap fileId="8"/>
+    </Material>
+    <Material name="dieselTanksLevel02_mat" materialId="6" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="gardenSink04_mat" materialId="7">
+      <Texture fileId="20"/>
+      <Normalmap fileId="21"/>
+      <Glossmap fileId="22"/>
+    </Material>
+    <Material name="ksAGGreen_mat" materialId="8" customShaderId="5" customShaderVariation="mergeChildren_hideByIndex">
+      <Texture fileId="23"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="25"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+      <CustomParameter name="hideByIndex" value="-1 0 0 0"/>
+    </Material>
+    <Material name="lambert1" materialId="9" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="metalShelf_mat" materialId="10">
+      <Texture fileId="17"/>
+      <Normalmap fileId="18"/>
+      <Glossmap fileId="19"/>
+    </Material>
+    <Material name="waterTankLevel01_mat" materialId="11" customShaderId="5">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="window_mat" materialId="12" alphaBlending="true">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Sprayerstore.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="Sprayerstore" nodeId="39">
+        <TransformGroup name="silo" translation="0.0305319 1.00681e-06 0.456277" rotation="180 -0 180" nodeId="40">
+          <TransformGroup name="storage" nodeId="41"/>
+          <TransformGroup name="hotspotNode" translation="0 0 3.62105" nodeId="42"/>
+          <TransformGroup name="unloadingStation" nodeId="43">
+            <Shape shapeId="1" name="exactFillRootNode" translation="0 -0.45 0.816468" visibility="false" static="true" collisionMask="1073741824" nodeId="44" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </TransformGroup>
+          <TransformGroup name="loadingStation" nodeId="45">
+            <Shape shapeId="2" name="loadingTrigger" translation="0 5 0.964285" static="true" trigger="true" collisionMask="1075838976" nodeId="46" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="dischargeNode" translation="0 0 3.242" nodeId="47"/>
+            <TransformGroup name="loadingMarker" translation="0 0 3.20804" nodeId="48"/>
+          </TransformGroup>
+          <Shape shapeId="2" name="infoTrigger" translation="0 5 0" visibility="false" static="true" trigger="true" collisionMask="1048576" nodeId="49" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="3" name="refillPlayerTrigger" translation="-0.509547 0 -4.19338" static="true" trigger="true" collisionMask="1048576" nodeId="50" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <TransformGroup name="refillTriggerMarker" nodeId="51"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="clearAreas" translation="0.0305319 1.00681e-06 0.456277" rotation="180 -0 180" nodeId="52">
+          <TransformGroup name="clearArea01Start" translation="1 0 -5.54223" nodeId="53">
+            <TransformGroup name="clearArea01Width" translation="-2.84217e-15 5.55112e-19 8.45015" nodeId="54"/>
+            <TransformGroup name="clearArea01Height" translation="-2.41097 0 1.42109e-15" nodeId="55"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelingAreas" translation="0.0305319 1.00681e-06 0.456277" rotation="180 -0 180" nodeId="56">
+          <TransformGroup name="levelArea1Start" translation="1.5 0 -6" nodeId="57">
+            <TransformGroup name="levelArea1Width" translation="-2.84217e-15 5.55112e-19 8.5" nodeId="58"/>
+            <TransformGroup name="levelArea1Height" translation="-3.5 0 1.42109e-15" nodeId="59"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" translation="0.0305319 1.00681e-06 0.456277" rotation="180 -0 180" nodeId="60">
+          <TransformGroup name="testArea1Start" translation="-1.4 0 -6" nodeId="61">
+            <TransformGroup name="testArea1End" translation="3.31111 2.40909 8.16087" nodeId="62"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" translation="0.0305319 1.00681e-06 0.456277" rotation="180 -0 180" nodeId="63">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-1.4 0 -2" nodeId="64">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="2.41085 0 3.63902" nodeId="65"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipCollision" translation="0.0305319 1.00681e-06 0.456277" rotation="180 -0 180" nodeId="66">
+          <Shape shapeId="4" name="collision" translation="0 0 0.545893" visibility="false" static="true" collisionMask="524288" nodeId="67" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="visuals" translation="0.0305319 1.00681e-06 0.456277" rotation="180 -0 180" nodeId="68">
+          <Shape shapeId="5" name="dieselTanksLevel02Vis" clipDistance="200" nodeId="69" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="glass" translation="-0.314409 1.10866 2.34435" clipDistance="15" nodeId="70" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="7" name="decals" translation="-0.256364 1.0443 2.18888" clipDistance="20" nodeId="71" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="8" name="cargoContainerBlueOpen" lockedgroup="true" translation="-0.139527 -6.72902e-07 -1.69887" rotation="-180 -1.30633e-12 -180" static="true" clipDistance="150" nodeId="72" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="9" name="door1" translation="1.14025 1.44207 3.84695" kinematic="true" clipDistance="50" nodeId="73" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="10" name="col" visibility="false" kinematic="true" density="0.0001" nodeId="74" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="11" name="door2" translation="-1.14025 1.44208 3.84695" kinematic="true" clipDistance="50" nodeId="75" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="12" name="col" translation="0.614995 -0.763683 0.354565" visibility="false" kinematic="true" density="0.0001" nodeId="76" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="13" name="door3" translation="-1.14025 1.44207 -3.65049" rotation="2.85305e-17 0 3.24886e-10" clipDistance="50" nodeId="77" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="14" name="col" translation="0.614994 -0.763683 0.506444" visibility="false" static="true" density="0.0001" nodeId="78" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="15" name="door4" translation="1.14026 1.44208 -3.65049" clipDistance="50" nodeId="79" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="16" name="col" translation="-0.520405 -0.763683 0.506444" visibility="false" static="true" density="0.0001" nodeId="80" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="17" name="col" translation="8 0 0" visibility="false" static="true" density="0.0001" nodeId="81" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+          <Shape shapeId="18" name="waterTankLevel01Vis" translation="-0.0324745 2.80306 0.879268" rotation="8.65142e-06 -90 0" static="true" clipDistance="150" nodeId="82" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="18" name="waterTankLevel01Vis" translation="-0.0324745 2.80306 -0.491295" rotation="8.65142e-06 -90 0" static="true" clipDistance="150" nodeId="83" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="18" name="waterTankLevel01Vis" translation="-0.0324745 2.80306 -1.80532" rotation="8.65142e-06 -90 0" static="true" clipDistance="150" nodeId="84" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="19" name="metalShelf75x210x200cm_vis" translation="-0.0539056 0.146568 -1.77685" rotation="0 -90 2.86307e-10" static="true" clipDistance="100" nodeId="85" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="19" name="metalShelf75x210x200cm_vis" translation="0.580853 0.146568 -3.15445" rotation="0 0 2.86307e-10" static="true" clipDistance="100" nodeId="86" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="20" name="gardenSink04" lockedgroup="true" translation="0.93389 0.146568 -4.80213" rotation="-8.65142e-06 -90 0" static="true" clipDistance="40" nodeId="87" materialIds="7" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="21" name="gardenSink04bucket" translation="-0.369144 0 0.398138" dynamic="true" density="0.5" nodeId="88" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="22" name="gardenSink04bucket_vis" clipDistance="30" nodeId="89" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </Shape>
+          <Shape shapeId="23" name="fertilizerBags" translation="0.773858 0.0905511 -2.96635" rotation="8.65142e-06 -90 0" clipDistance="200" nodeId="90" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="23" name="fertilizerBags" translation="-0.321668 0.0905511 -1.5635" rotation="8.65142e-06 180 0" clipDistance="200" nodeId="91" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="23" name="fertilizerBags" translation="-0.321668 0.541193 -1.5635" rotation="8.65142e-06 180 0" clipDistance="200" nodeId="92" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="23" name="fertilizerBags" translation="-0.321668 1.08324 -1.5635" rotation="8.65142e-06 180 0" clipDistance="200" nodeId="93" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="23" name="fertilizerBags" translation="-0.321668 1.58685 -1.5635" rotation="8.65142e-06 180 0" clipDistance="200" nodeId="94" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="24" name="Doortrigger" static="true" trigger="true" collisionMask="1048576" nodeId="95" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="collisions" translation="0.0305319 1.00681e-06 0.456277" rotation="180 -0 180" nodeId="96">
+          <Shape shapeId="25" name="collision" static="true" clipDistance="300" nodeId="97" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

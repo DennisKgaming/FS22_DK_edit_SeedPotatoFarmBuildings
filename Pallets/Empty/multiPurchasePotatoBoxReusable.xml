@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="multipleItemPurchase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+  <storeData>
+    <name> $l10n_storeItem_PersistentPotatoBox </name>
+    <image>Pallets/Empty/Store_PotatoBox.dds</image>
+    <category>pallets</category>
+    <brand>LIZARD</brand>
+    <showInStore>true</showInStore>
+    <canBeSold>true</canBeSold>
+    <financeCategory>OTHER</financeCategory>
+    <price>105</price>
+        <vertexBufferMemoryUsage>768</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>256</indexBufferMemoryUsage>
+        <textureMemoryUsage>65536</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+  </storeData>
+
+ <base>
+    <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/buyableBales/buyableBale.i3d</filename>
+    <size width="1.85" length="1.2" height="1.1" />
+    <components>
+      <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="100" />
+    </components>
+  </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit fillTypeCategories="bulk" capacity="2000" />
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <multipleItemPurchase filename="Pallets/Empty/PersistentPotatoBox.xml" isVehicle="true">
+        <offsets>
+            <offset amount="2" offset="0.775 0 0"/>
+            <offset amount="3" offset="0.775 0 0.6"/>
+            <offset amount="5" offset="0.775 0 1.2"/>
+            <offset amount="7" offset="0.775 0 1.8"/>
+        </offsets>
+        <itemPositions>
+            <itemPosition position="0 0 0" rotation="0 0 0"/>
+            <itemPosition position="0 1.08 0" rotation="0 0 0"/>
+            <itemPosition position="2 0 0" rotation="0 0 0"/>
+            <itemPosition position="2 1.08 0" rotation="0 0 0"/>
+
+            <itemPosition position="0 0 -1.5" rotation="0 0 0"/>
+            <itemPosition position="0 1.08 -1.5" rotation="0 0 0"/>
+            <itemPosition position="2 0 -1.5" rotation="0 0 0"/>
+            <itemPosition position="2 1.08 -1.5" rotation="0 0 0"/>
+        </itemPositions>
+    </multipleItemPurchase>
+
+    <multipleItemPurchaseAmountConfigurations>
+        <multipleItemPurchaseAmountConfiguration name="1" price="0"/>
+        <multipleItemPurchaseAmountConfiguration name="2" price="210"/>
+        <multipleItemPurchaseAmountConfiguration name="3" price="315"/>
+        <multipleItemPurchaseAmountConfiguration name="4" price="420"/>
+        <multipleItemPurchaseAmountConfiguration name="5" price="525"/>
+        <multipleItemPurchaseAmountConfiguration name="6" price="630"/>
+        <multipleItemPurchaseAmountConfiguration name="7" price="735"/>
+        <multipleItemPurchaseAmountConfiguration name="8" price="840"/>
+    </multipleItemPurchaseAmountConfigurations>
+</vehicle>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="furnitureStackPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="9" filename="$data/maps/textures/shared/props/euroPallet01_diffuse.png"/>
+    <File fileId="10" filename="$data/maps/textures/shared/props/euroPallet01_normal.png"/>
+    <File fileId="11" filename="$data/maps/textures/shared/props/euroPallet01_specular.png"/>
+    <File fileId="5" filename="$data/maps/textures/shared/props/propsDecals_diffuse.png"/>
+    <File fileId="7" filename="$data/maps/textures/shared/props/propsDecals_specular.png"/>
+    <File fileId="2" filename="$data/objects/pallets/euroPallet01_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/euroPallet01_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/euroPallet01_specular.png"/>
+    <File fileId="8" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="6" filename="$data/shared/default_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="euroPallet01_mat" materialId="4">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+    </Material>
+    <Material name="euroPallet01_mat" materialId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="propsDecals_mat" materialId="7" alphaBlending="true" customShaderId="8">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Pallets.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="furnitureStackPallet_component1" dynamic="true" compound="true" collisionMask="2109442" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="16" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="2" name="pallet_vis" nodeId="17" materialIds="5" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="3" name="dynamicMountTrigger" translation="0 0.0904753 0" visibility="false" kinematic="true" trigger="true" collisionMask="134217728" nodeId="18" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="dischargeNode" translation="0 0.6 0" nodeId="19"/>
+          <TransformGroup name="content" nodeId="20">
+            <Shape shapeId="4" name="euroPalletNew" translation="0 0.15 0" nodeId="21" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true" compoundChild="true">
+              <Shape shapeId="5" name="decal" clipDistance="50" nodeId="22" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="6" name="euroPalletNe_vis" clipDistance="100" nodeId="23" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="4" name="euroPalletNew" translation="0 0.315039 0" nodeId="24" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true" compoundChild="true">
+              <Shape shapeId="5" name="decal" clipDistance="50" nodeId="25" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="6" name="euroPalletNe_vis" clipDistance="100" nodeId="26" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="4" name="euroPalletNew" translation="0 0.485844 0" nodeId="27" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true" compoundChild="true">
+              <Shape shapeId="5" name="decal" clipDistance="50" nodeId="28" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="6" name="euroPalletNe_vis" clipDistance="100" nodeId="29" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="4" name="euroPalletNew" translation="0 0.652491 0" nodeId="30" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true" compoundChild="true">
+              <Shape shapeId="5" name="decal" clipDistance="50" nodeId="31" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="6" name="euroPalletNe_vis" clipDistance="100" nodeId="32" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="4" name="euroPalletNew" translation="0 0.815646 0" nodeId="33" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true" compoundChild="true">
+              <Shape shapeId="5" name="decal" clipDistance="50" nodeId="34" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="6" name="euroPalletNe_vis" clipDistance="100" nodeId="35" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="4" name="euroPalletNew" translation="0 0.972479 0" nodeId="36" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true" compoundChild="true">
+              <Shape shapeId="5" name="decal" clipDistance="50" nodeId="37" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="6" name="euroPalletNe_vis" clipDistance="100" nodeId="38" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="4" name="euroPalletNew" translation="0 1.13854 0" nodeId="39" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true" compoundChild="true">
+              <Shape shapeId="5" name="decal" clipDistance="50" nodeId="40" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="6" name="euroPalletNe_vis" clipDistance="100" nodeId="41" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="4" name="euroPalletNew" translation="0 1.29734 0" nodeId="42" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true" compoundChild="true">
+              <Shape shapeId="5" name="decal" clipDistance="50" nodeId="43" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="6" name="euroPalletNe_vis" clipDistance="100" nodeId="44" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="4" name="euroPalletNew" translation="0 1.4616 0" nodeId="45" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true" compoundChild="true">
+              <Shape shapeId="5" name="decal" clipDistance="50" nodeId="46" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="6" name="euroPalletNe_vis" clipDistance="100" nodeId="47" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="4" name="euroPalletNew" translation="0 1.61651 0" nodeId="48" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true" compoundChild="true">
+              <Shape shapeId="5" name="decal" clipDistance="50" nodeId="49" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="6" name="euroPalletNe_vis" clipDistance="100" nodeId="50" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="collisions" clipDistance="10" nodeId="51">
+            <Shape shapeId="7" name="floorCollision01" translation="0.3 0 0" compoundChild="true" collisionMask="16781578" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="52" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="7" name="floorCollision02" translation="-0.3 0 0" compoundChild="true" collisionMask="16781578" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="53" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </TransformGroup>
+        </Shape>
+      </Shape>
+  </Scene>
+
+</i3D>
